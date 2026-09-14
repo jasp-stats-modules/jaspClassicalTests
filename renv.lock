@@ -2041,21 +2041,7 @@
       "RemoteUsername": "jasp-stats",
       "RemoteRepo": "jaspGraphs",
       "RemoteRef": "master",
-      "RemoteSha": "edb912bfb3435da6f079068a176f46cd8294b4e0",
-      "Requirements": [
-        "R6",
-        "cli",
-        "ggplot2",
-        "gridExtra",
-        "gtable",
-        "htmlwidgets",
-        "jsonlite",
-        "lifecycle",
-        "plotly",
-        "rlang",
-        "scales"
-      ],
-      "Hash": "572464666b983097fbd10f5e8102d84e"
+      "RemoteSha": "edb912bfb3435da6f079068a176f46cd8294b4e0"
     },
     "jaspRegression": {
       "Package": "jaspRegression",
@@ -2066,33 +2052,7 @@
       "RemoteUsername": "jasp-stats",
       "RemoteRepo": "jaspRegression",
       "RemoteRef": "master",
-      "RemoteSha": "5621a174b574f30b288dcedc4e131458ae4b12c9",
-      "Remotes": "AlexanderLyNL/bstats, jasp-stats/jaspAnova, jasp-stats/jaspBase, jasp-stats/jaspDescriptives, jasp-stats/jaspGraphs, jasp-stats/jaspTTests, vandenman/jaspTools",
-      "Requirements": [
-        "BAS",
-        "MASS",
-        "Rcpp",
-        "VGAM",
-        "boot",
-        "bstats",
-        "combinat",
-        "emmeans",
-        "ggplot2",
-        "ggrepel",
-        "jaspAnova",
-        "jaspBase",
-        "jaspDescriptives",
-        "jaspGraphs",
-        "jaspTTests",
-        "lmtest",
-        "logistf",
-        "matrixStats",
-        "mdscore",
-        "ppcor",
-        "purrr",
-        "statmod"
-      ],
-      "Hash": "e2bd8cc9886a27531ee83bdd8a66eefa"
+      "RemoteSha": "5621a174b574f30b288dcedc4e131458ae4b12c9"
     },
     "jaspTTests": {
       "Package": "jaspTTests",
