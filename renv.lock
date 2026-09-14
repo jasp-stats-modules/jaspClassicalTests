@@ -4931,7 +4931,7 @@
     },
     "httpuv": {
       "Package": "httpuv",
-      "Version": "1.6.16",
+      "Version": "1.6.17",
       "Source": "Repository",
       "Type": "Package",
       "Title": "HTTP and WebSocket Server Library",
