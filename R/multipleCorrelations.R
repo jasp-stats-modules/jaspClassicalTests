@@ -24,6 +24,7 @@
 # the Regression module is available, so the delegate resolves normally.
 
 #' @import jaspBase
+#' @import jaspRegression
 #' @export
 multipleCorrelations <- function(jaspResults, dataset, options, ...) {
   if (!requireNamespace("jaspRegression", quietly = TRUE)) {
