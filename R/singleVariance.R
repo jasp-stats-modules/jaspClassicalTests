@@ -21,15 +21,15 @@ singleVariance <- function(jaspResults, dataset, options, ...) {
   # makes the bootstrap confidence interval reproducible when the user sets a seed
   jaspBase::.setSeedJASP(options)
 
-  # is ready if test is selected and data was provided
+  # is ready if data was provided
   if (options[["inputType"]] == "rawData") {
-    ready <- (ncol(dataset) > 0 && options[["chiSquareTest"]])
+    ready <- ncol(dataset) > 0
     if (ready)
       .hasErrors(dataset, type = c('infinity', 'variance'),
                  all.target = options[["dependent"]], variance.equalTo = 0,
                  exitAnalysisIfErrors = TRUE)
   } else {
-    ready <- options[["chiSquareTest"]]
+    ready <- TRUE
   }
 
   .pruneDisabledOutputSV(jaspResults, options)
@@ -72,7 +72,7 @@ singleVariance <- function(jaspResults, dataset, options, ...) {
     return()
 
   outputTable <- createJaspTable(title = gettext("Single Variance Test"))
-  outputTable$dependOn(c("alternative", "chiSquareTest", "ciMethod", "confLevel", "dependent",
+  outputTable$dependOn(c("alternative", "ciMethod", "confLevel", "dependent",
                          "sdEstimate", "sdCi", "testVariance", "varEstimate", "varianceCi",
                          "bootstrapSamples", "setSeed", "seed",
                          "inputType", "sampleVariance", "sampleSize"))

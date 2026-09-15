@@ -99,7 +99,6 @@ test_that("Single Variance Test summarized input matches VarTest", {
   options$sampleVariance <- 4.2
   options$sampleSize     <- 30
   options$testVariance   <- 1
-  options$chiSquareTest  <- TRUE
   options$varEstimate    <- TRUE
   options$sdEstimate     <- TRUE
   options$varianceCi     <- TRUE
