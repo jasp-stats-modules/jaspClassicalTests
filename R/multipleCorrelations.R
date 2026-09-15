@@ -24,14 +24,9 @@
 # the Regression module is available, so the delegate resolves normally.
 
 #' @import jaspBase
+#' @import jaspRegression
 #' @export
 multipleCorrelations <- function(jaspResults, dataset, options, ...) {
-  if (!requireNamespace("jaspRegression", quietly = TRUE)) {
-    errorTable <- createJaspTable(title = gettext("Correlation Matrix"))
-    errorTable$setError(gettext("This analysis requires the Regression (jaspRegression) module, which is not available."))
-    jaspResults[["error"]] <- errorTable
-    return()
-  }
 
   jaspRegression::CorrelationInternal(jaspResults, dataset, options)
 }

@@ -14,10 +14,10 @@ Imports:
     DescTools,
     jaspBase,
     jaspFrequencies (>= 0.95.5),
+    jaspRegression (>= 0.96.5),
     jaspGraphs,
     jaspTTests
 Suggests:
-    jaspRegression (>= 0.96.5),
     testthat
 Remotes: 
     jasp-stats/jaspBase,
