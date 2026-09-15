@@ -99,6 +99,7 @@ Form
                 name: "testVariance"
                 defaultValue: 1
                 decimals: 3
+                min: 0
                 inclusive: JASP.MaxOnly
             }
 
