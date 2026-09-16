@@ -77,7 +77,7 @@ Form
 
 			CheckBox
 			{
-				id:                "ciBootstrap"
+				id:                ciBootstrap
 				name:              "ciBootstrap"
 				label:             qsTr("From")
 				childrenOnSameRow: true
