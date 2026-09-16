@@ -329,7 +329,7 @@ oneCorrelation <- function(jaspResults, dataset, options, ...) {
     return(c(NA_real_, NA_real_))
 
   alpha <- 1 - confLevel
-  bound <- function(p) unname(quantile(estimates, probs = p, na.rm = TRUE))
+  bound <- function(p) unname(stats::quantile(estimates, probs = p, na.rm = TRUE))
 
   if (hypothesis == "two.sided")
     return(c(bound(alpha / 2), bound(1 - alpha / 2)))
