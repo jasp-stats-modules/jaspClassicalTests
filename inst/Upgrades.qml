@@ -6,7 +6,7 @@ Upgrades
 	Upgrade
 	{
 		functionName:	"singleVariance"
-		fromVersion:	"0.1.0"
+		fromVersion:	"0.1"
 		toVersion:		"0.1.1"
 
 		// chi-square test table is now always shown, so the checkbox is removed
