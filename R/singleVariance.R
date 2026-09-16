@@ -216,10 +216,10 @@ singleVariance <- function(jaspResults, dataset, options, ...) {
 # Chi-square interval for the variance; one-sided for a one-sided alternative, as in DescTools::VarTest.
 .chiSquareVarianceCiSV <- function(variance, df, confLevel, alternative) {
   ci <- switch(alternative,
-               "two.sided" = df * variance / c(qchisq((1 - confLevel) / 2, df, lower.tail = FALSE),
-                                               qchisq((1 - confLevel) / 2, df)),
-               "greater"   = c(df * variance / qchisq(1 - confLevel, df, lower.tail = FALSE), Inf),
-               "less"      = c(0, df * variance / qchisq(1 - confLevel, df)))
+               "two.sided" = df * variance / c(stats::qchisq((1 - confLevel) / 2, df, lower.tail = FALSE),
+                                               stats::qchisq((1 - confLevel) / 2, df)),
+               "greater"   = c(df * variance / stats::qchisq(1 - confLevel, df, lower.tail = FALSE), Inf),
+               "less"      = c(0, df * variance / stats::qchisq(1 - confLevel, df)))
 
   return(list(lower = ci[1], upper = ci[2], error = NULL))
 }
