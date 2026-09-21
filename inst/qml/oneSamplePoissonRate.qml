@@ -121,7 +121,7 @@ Form
 		{
 			name:  "normalApprox"
 			label: qsTr("Normal approximation")
-			info:  qsTr("Large-sample normal approximation. The z statistic uses the standard error under the hypothesized rate; the confidence interval (Wald) uses the standard error at the observed rate. Unreliable for small numbers of occurrences (Barker, 2002).")
+			info:  qsTr("Large-sample normal approximation. Included because it is easy to compute by hand and common in textbooks; the exact test is generally preferred. The z statistic uses the standard error under the hypothesized rate; the confidence interval (Wald) uses the standard error at the observed rate. Unreliable for small numbers of occurrences (Barker, 2002).")
 		}
 	}
 
