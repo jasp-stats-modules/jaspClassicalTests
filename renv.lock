@@ -1725,7 +1725,7 @@
       "RemoteHost": "api.github.com",
       "RemoteUsername": "jasp-stats",
       "RemoteRepo": "jaspBase",
-      "RemoteSha": "f6e133c40b95bff441d344bf193054d4c98c7e47"
+      "RemoteSha": "a9364a5e401d51052240c3d8e068494a6c31f105"
     },
     "jaspDescriptives": {
       "Package": "jaspDescriptives",
@@ -1802,7 +1802,7 @@
       "RemoteHost": "api.github.com",
       "RemoteUsername": "jasp-stats",
       "RemoteRepo": "jaspGraphs",
-      "RemoteSha": "edb912bfb3435da6f079068a176f46cd8294b4e0"
+      "RemoteSha": "4d2547c6e9bd26d87ef2b4ba8d5cdeed0033927a"
     },
     "jaspRegression": {
       "Package": "jaspRegression",
