@@ -26,6 +26,8 @@ Form
 {
 	info: qsTr("The one sample t-test allows the user to estimate the effect size and test the null hypothesis that the population mean equals a specific constant, i.e., the test value.\n") + 
     "## " + qsTr("Assumptions") + "\n" + "- The dependent variable is continuous.\n" + "- The data are a random sample from the population.\n" + "- The dependent variable is normally distributed in the population."
+	infoBottom: "## " + qsTr("References") + "\n" +
+	"- Sellke, T., Bayarri, M. J., & Berger, J. O. (2001). Calibration of _p_ values for testing precise null hypotheses. _The American Statistician, 55_(1), 62-71. https://doi.org/10.1198/000313001300339950"
 	id: form
 	property int framework:	Common.Type.Framework.Classical
 

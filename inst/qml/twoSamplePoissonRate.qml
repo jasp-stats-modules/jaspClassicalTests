@@ -23,6 +23,9 @@ import JASP
 
 Form
 {
+	infoBottom: "## " + qsTr("References") + "\n" +
+	"- Zou, G. Y., & Donner, A. (2008). Construction of confidence limits about effect measures: A general approach. _Statistics in Medicine, 27_(10), 1693-1702. https://doi.org/10.1002/sim.3095"
+
 	RadioButtonGroup
 	{
 		name:    "inputType"

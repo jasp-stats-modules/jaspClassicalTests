@@ -26,6 +26,10 @@ Form
 {
 	info: qsTr("The paired samples t-test allows the user to estimate the effect size and test the null hypothesis that the population mean of the difference between observations equals 0 in dependent groups.\n") +
 	"## " + qsTr("Assumptions") + "\n" + "- The difference score is continuous.\n" + "- The difference scores are a random sample from the population.\n" + "- The difference scores are normally distributed in the population."
+	infoBottom: "## " + qsTr("References") + "\n" +
+	"- Dunlap, W. P., Cortina, J. M., Vaslow, J. B., & Burke, M. J. (1996). Meta-analysis of experiments with matched groups or repeated measures designs. _Psychological Methods, 1_(2), 170-177. https://doi.org/10.1037/1082-989X.1.2.170\n" +
+	"- Morey, R. D. (2008). Confidence intervals from normalized data: A correction to Cousineau (2005). _Tutorials in Quantitative Methods for Psychology, 4_(2), 61-64.\n" +
+	"- Sellke, T., Bayarri, M. J., & Berger, J. O. (2001). Calibration of _p_ values for testing precise null hypotheses. _The American Statistician, 55_(1), 62-71. https://doi.org/10.1198/000313001300339950"
 	id: form
 	property int framework:	Common.Type.Framework.Classical
 

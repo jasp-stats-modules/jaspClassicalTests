@@ -24,6 +24,8 @@ import JASP.Controls
 Form
 {
 	info: qsTr("The binomial test allows the user to test whether a proportion of a dichotomous variable is equal to a test value (=presumed population value). The analysis returns a binomial test for each level of the dependent variable against all other levels, so it will also work for variables with more than two levels.\n" + "## " + "Assumptions\n" + "- The variable should be a dichotomous scale.\n" + "- Observations should be independent.")
+	infoBottom: "## " + qsTr("References") + "\n" +
+	"- Sellke, T., Bayarri, M. J., & Berger, J. O. (2001). Calibration of _p_ values for testing precise null hypotheses. _The American Statistician, 55_(1), 62-71. https://doi.org/10.1198/000313001300339950"
 
 	Formula
 	{

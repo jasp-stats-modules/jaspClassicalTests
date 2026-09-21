@@ -23,6 +23,9 @@ import JASP
 
 Form
 {
+    infoBottom: "## " + qsTr("References") + "\n" +
+    "- Banga, S. J., & Fox, G. D. (2013). Multiple comparisons method."
+
     RadioButtonGroup
     {
         name:    "inputType"

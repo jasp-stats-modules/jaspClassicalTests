@@ -24,6 +24,8 @@ import JASP
 Form
 {
 	info: qsTr("Tests whether the proportion of successes is the same across several groups.\n" + "## " + "Assumptions\n" + "- Independent observations within and between groups.\n- A binary outcome (success/failure) recorded for each group.")
+	infoBottom: "## " + qsTr("References") + "\n" +
+	"- Sellke, T., Bayarri, M. J., & Berger, J. O. (2001). Calibration of _p_ values for testing precise null hypotheses. _The American Statistician, 55_(1), 62-71. https://doi.org/10.1198/000313001300339950"
 
 	VariablesForm
 	{
