@@ -26,7 +26,7 @@ Form
 	infoBottom: "## " + qsTr("References") + "\n" +
 	"- Barker, L. (2002). A comparison of nine confidence intervals for a Poisson parameter when the expected number of events is ≤ 5. _The American Statistician, 56_(2), 85-89. https://doi.org/10.1198/000313002317572736\n" +
 	"- Garwood, F. (1936). Fiducial limits for the Poisson distribution. _Biometrika, 28_(3/4), 437-442. https://doi.org/10.1093/biomet/28.3-4.437\n" +
-	"- Patil V. V. & Kulkarni H. V. (2012). Comparison of confidence intervals for the Poisson mean: Some new aspects. _REVSTAT-Statistical Journal, 10_(2), 211-222. https://doi.org/10.57805/revstat.v10i2.117"
+	"- Patil, V. V., & Kulkarni, H. V. (2012). Comparison of confidence intervals for the Poisson mean: Some new aspects. _REVSTAT-Statistical Journal, 10_(2), 211-222. https://doi.org/10.57805/revstat.v10i2.117"
 
 	RadioButtonGroup
 	{

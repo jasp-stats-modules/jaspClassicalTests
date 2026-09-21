@@ -24,6 +24,8 @@ import JASP
 Form
 {
 	info: qsTr("Compares the proportion of successes between two groups, reporting their difference (with confidence interval) and, optionally, the relative risk and odds ratio.\n" + "## " + "Assumptions\n" + "- Independent observations within and between groups.\n- A binary outcome (success/failure) recorded for each group.")
+	infoBottom: "## " + qsTr("References") + "\n" +
+	"- Sellke, T., Bayarri, M. J., & Berger, J. O. (2001). Calibration of _p_ values for testing precise null hypotheses. _The American Statistician, 55_(1), 62-71. https://doi.org/10.1198/000313001300339950"
 
 	VariablesForm
 	{

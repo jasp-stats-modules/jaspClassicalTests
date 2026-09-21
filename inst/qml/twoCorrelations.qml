@@ -23,6 +23,11 @@ import JASP
 
 Form
 {
+	infoBottom: "## " + qsTr("References") + "\n" +
+	"- Fisher, R. A. (1925). _Statistical methods for research workers_. Oliver and Boyd.\n" +
+	"- Steiger, J. H. (1980). Tests for comparing elements of a correlation matrix. _Psychological Bulletin, 87_(2), 245-251. https://doi.org/10.1037/0033-2909.87.2.245\n" +
+	"- Zou, G. Y. (2007). Toward using confidence intervals to compare correlations. _Psychological Methods, 12_(4), 399-413. https://doi.org/10.1037/1082-989X.12.4.399"
+
 	RadioButtonGroup
 	{
 		id:    samples
