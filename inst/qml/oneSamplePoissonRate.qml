@@ -23,6 +23,11 @@ import JASP
 
 Form
 {
+	infoBottom: "## " + qsTr("References") + "\n" +
+	"- Barker, L. (2002). A comparison of nine confidence intervals for a Poisson parameter when the expected number of events is ≤ 5. _The American Statistician, 56_(2), 85-89. https://doi.org/10.1198/000313002317572736\n" +
+	"- Garwood, F. (1936). Fiducial limits for the Poisson distribution. _Biometrika, 28_(3/4), 437-442. https://doi.org/10.1093/biomet/28.3-4.437\n" +
+	"- Patil, V. V., & Kulkarni, H. V. (2012). Comparison of confidence intervals for the Poisson mean: Some new aspects. _REVSTAT-Statistical Journal, 10_(2), 211-222. https://doi.org/10.57805/revstat.v10i2.117"
+
 	RadioButtonGroup
 	{
 		name:    "inputType"
@@ -109,14 +114,14 @@ Form
 			name:    "exactTest"
 			label:   qsTr("Exact")
 			checked: true
-			info:    qsTr("Exact Poisson test based on the Poisson distribution (Garwood intervals for CI).")
+			info:    qsTr("Exact Poisson test based on the Poisson distribution. Valid for any number of occurrences, including zero; the confidence interval (Garwood, 1936) is conservative, i.e., its coverage is at least the nominal level (Barker, 2002; Patil & Kulkarni, 2012).")
 		}
 
 		CheckBox
 		{
 			name:  "normalApprox"
 			label: qsTr("Normal approximation")
-			info:  qsTr("Large-sample normal approximation using the score test statistic.")
+			info:  qsTr("Large-sample normal approximation. Included because it is easy to compute by hand and common in textbooks; the exact test is generally preferred. The z statistic uses the standard error under the hypothesized rate; the confidence interval (Wald) uses the standard error at the observed rate. Unreliable for small numbers of occurrences (Barker, 2002).")
 		}
 	}
 
@@ -168,7 +173,7 @@ Form
 			name:              "rateCi"
 			label:             qsTr("Confidence interval")
 			childrenOnSameRow: true
-			info:              qsTr("Confidence interval for the event rate. Uses the method of the corresponding row in the test table.")
+			info:              qsTr("Confidence interval for the event rate λ. Each row uses its own method: exact (Garwood, 1936) or normal approximation (Wald). For one-sided alternatives, a one-sided confidence bound is shown.")
 
 			CIField { name: "confLevel" }
 		}

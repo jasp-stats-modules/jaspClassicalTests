@@ -138,9 +138,6 @@ oneSamplePoissonRate <- function(jaspResults, dataset, options) {
     )
   )
 
-  if (options[["rateCi"]])
-    outputTable$addFootnote(gettextf("Confidence intervals are for %s; the exact row uses the exact Poisson distribution, the normal-approximation row a normal approximation.", "λ"))
-
   return()
 }
 

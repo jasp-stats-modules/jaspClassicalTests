@@ -30,6 +30,8 @@ Form
 		"- " + qsTr("The observations in both groups are a random sample from the population.") + "\n" +
 		"- " + qsTr("The dependent variable is normally distributed in each group of the independent variable.") + "\n" +
 		"- " + qsTr("The population variances in the two groups are homogeneous.")
+	infoBottom: "## " + qsTr("References") + "\n" +
+	"- Sellke, T., Bayarri, M. J., & Berger, J. O. (2001). Calibration of _p_ values for testing precise null hypotheses. _The American Statistician, 55_(1), 62-71. https://doi.org/10.1198/000313001300339950"
 	id: form
 	property int framework:	Common.Type.Framework.Classical
 
