@@ -17,17 +17,25 @@
 
 #' @import jaspBase
 #' @import jaspTTests
+#jaspTTests internals read options that this module's QML does not define;
+#giving them defaults here keeps delegation from crashing on NULL
+.fillTTestOptionDefaults <- function(options) {
+  if (is.null(options[["qqPlotCi"]]))      options[["qqPlotCi"]]      <- FALSE
+  if (is.null(options[["qqPlotCiLevel"]])) options[["qqPlotCiLevel"]] <- 0.95
+  options
+}
+
 #' @export
 oneSampleTests <- function(jaspResults, dataset, options, ...) {
-  return(jaspTTests::TTestOneSampleInternal(jaspResults, dataset, options, ...))
+  return(jaspTTests::TTestOneSampleInternal(jaspResults, dataset, .fillTTestOptionDefaults(options), ...))
 }
 
 #' @export
 independentSamplesTests <- function(jaspResults, dataset, options, ...) {
-  return(jaspTTests::TTestIndependentSamplesInternal(jaspResults, dataset, options, ...))
+  return(jaspTTests::TTestIndependentSamplesInternal(jaspResults, dataset, .fillTTestOptionDefaults(options), ...))
 }
 
 #' @export
 pairedSamplesTests <- function(jaspResults, dataset, options, ...) {
-  return(jaspTTests::TTestPairedSamplesInternal(jaspResults, dataset, options, ...))
+  return(jaspTTests::TTestPairedSamplesInternal(jaspResults, dataset, .fillTTestOptionDefaults(options), ...))
 }
